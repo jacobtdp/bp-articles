@@ -9,4 +9,27 @@
 .left-links > div:nth-child(odd){
     background-color: #852c66;
 }
+.left-links > div:nth-child(even){
+    background-color: #a55288;
+}
+
+/* .left-link > img{
+    position: absolute;
+} */
+
+.left-link{
+    padding: 1em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+.left-link > img {
+    position: absolute;
+}
+
+.left-link > h4{
+    margin: 1em 0;
+    align-self: end;
+}
 

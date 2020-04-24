@@ -8,13 +8,24 @@ class Links extends Component{
             <div>
                 <h3>More Articles</h3>
                 <div className="left-links">
-                    <div className="left-link">.</div>
-                    <div className="left-link">.</div>
-                    <div className="left-link">.</div>
+                    <div className="left-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h4>A title here</h4>
+                        <p>What a day for a subtitle</p>
+                    </div>
+                    <div className="left-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h4>A title here</h4>
+                        <p>What a day for a subtitle</p>
+                    </div>
+                    <div className="left-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h4>A title here</h4>
+                        <p>What a day for a subtitle</p>
+                    </div>
                     <div className="left-ad">ad</div>
-                    <div className="left-link">ad</div>
-                    <div className="left-link">ad</div>
-                    <div className="left-link">ad</div>
+                    <div className="left-ad">ad</div>
+                    <div className="left-ad">ad</div>
                 </div>
             </div>
         )
