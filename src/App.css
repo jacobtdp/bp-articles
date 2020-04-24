@@ -18,6 +18,9 @@
   background-color: #a55288;
 }
 
+/* //// Set grid to single column //// */
+/* //// Hide all but title-page content for mobile view //// */
+
 @media only screen and (max-width: 850px){
 
   .body-wrapper{
