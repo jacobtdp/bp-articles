@@ -17,3 +17,18 @@
 .body-wrapper > div:nth-child(odd) {
   background-color: #a55288;
 }
+
+@media only screen and (max-width: 850px){
+
+  .body-wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .body-wrapper > div{
+    display: none;
+  }
+  .body-wrapper > div:nth-child(2){
+    display: inline;
+  }
+
+}

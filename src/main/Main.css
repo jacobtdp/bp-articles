@@ -1,7 +1,9 @@
+/* ////////////// Title Stories ///////////////// */
+
 .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 128.25vh;
+    height: 128.25vh; /* To be set by content? */
 }
 
 .main-content > div {
@@ -19,7 +21,7 @@
     grid-column: 1/3;
 }
 
-
+/* ///////////////// Links and Ads /////////////////// */
 
 .tbd-content {
     display: grid;
@@ -33,4 +35,23 @@
 
 .tbd-content > div {
     border: 2px solid black;
+}
+
+/* /////// Resetting grid for mobile view ///////// */
+
+@media only screen and (max-width: 526px){
+
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+    .main-content > div:nth-child(1){
+        grid-column: unset;
+    }
+    .main-content > div:nth-child(2){
+        grid-column: unset;
+    }
+    .tbd-content{
+        grid-column: unset;
+    }
+
 }
