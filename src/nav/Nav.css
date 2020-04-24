@@ -1,6 +1,6 @@
 .navbar{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 3fr 1fr 1fr;
 
     text-align: center;
     
@@ -9,4 +9,25 @@
 
 .navbar > p {
     align-self: center;
+    display: none;
+}
+
+.menu-burger{
+    display: inline;
+}
+
+@media only screen and (min-width: 525px){
+
+    .navbar{
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .menu-burger{
+        display: none;
+    }
+
+    .navbar > p{
+        display: inline;
+    }
+
 }

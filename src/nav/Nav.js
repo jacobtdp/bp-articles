@@ -13,7 +13,12 @@ class Nav extends Component{
                 <p className="nested">Coconut</p>
 
                 <div></div>
-                <div><h2>Q</h2></div>
+                <div className="menu-burger">
+                    <h2>=</h2>
+                </div>
+                <div className="search-bar">
+                    <h2>Q</h2>
+                </div>
             </div>
         )
     }

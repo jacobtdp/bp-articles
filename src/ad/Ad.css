@@ -1,0 +1,9 @@
+.banner-ads{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 120vh;
+}
+
+.banner-ads > div:nth-child(odd){
+    background-color: purple;
+}

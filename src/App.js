@@ -2,8 +2,9 @@ import React from 'react';
 import './App.css';
 
 import Main from './main/Main';
-
+import Links from './links/Links';
 import Nav from './nav/Nav';
+import Ad from './ad/Ad';
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
       </header>
 
         <div className="body-wrapper">
-          <div>.</div>
+          <div><Links /></div>
           <div><Main /></div>
-          <div>.</div>
+          <div><Ad /></div>
         </div>
 
     </div>

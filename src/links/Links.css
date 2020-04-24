@@ -1,0 +1,12 @@
+.left-links{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+
+    height: 120vh;
+}
+
+.left-links > div:nth-child(odd){
+    background-color: purple;
+}
+

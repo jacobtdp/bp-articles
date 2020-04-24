@@ -15,10 +15,10 @@ class Main extends Component{
                     <div className="title-story-link">4</div>
                     <div className="title-story-link">4</div>
                     <div className="title-story-link">4</div>
-                    <div className="title-story-link">4</div>
-                    <div className="title-story-link">4</div>
-                    <div className="title-story-link">4</div>
-                    <div className="title-story-link">4</div>
+                    <div className="title-story-link">ad</div>
+                    <div className="title-story-link">ad</div>
+                    <div className="title-story-link">ad</div>
+                    <div className="title-story-link">ad</div>
                 </div>
             </div>
         )
