@@ -86,3 +86,8 @@
 .story-subtitle > p{
     border-bottom: 1px solid black;
 }
+
+.main-content-small-link{
+    padding: 5px;
+    text-align: center;
+}

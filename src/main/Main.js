@@ -34,14 +34,40 @@ class Main extends Component{
                 </div>
 
                 <div className="tbd-content">
-                    <div className="title-story-link">4</div>
-                    <div className="title-story-link">4</div>
-                    <div className="title-story-link">4</div>
-                    <div className="title-story-link">4</div>
-                    <div className="title-story-link">ad</div>
-                    <div className="title-story-link">ad</div>
-                    <div className="title-story-link">ad</div>
-                    <div className="title-story-link">ad</div>
+
+                    <div className="main-content-small-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h5>Test the new rock Salad</h5>
+                    </div>
+                    <div className="main-content-small-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h5>Test the new rock Salad</h5>
+                    </div>
+                    <div className="main-content-small-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h5>Test the new rock Salad</h5>
+                    </div>
+                    <div className="main-content-small-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h5>Test the new rock Salad</h5>
+                    </div>
+                    <div className="main-content-small-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h5>Go fishing for cheap plastic products</h5>
+                    </div>
+                    <div className="main-content-small-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h5>Find what you need in the bottom of your wallet</h5>
+                    </div>
+                    <div className="main-content-small-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h5>Are you a Zelda or a Zoe? Quiz!</h5>
+                    </div>
+                    <div className="main-content-small-link">
+                        <img src="*" alt="{SSR}"/>
+                        <h5>People over 65 need to try this</h5>
+                    </div>
+
                 </div>
             </div>
         )
