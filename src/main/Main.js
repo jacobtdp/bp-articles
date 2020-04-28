@@ -12,30 +12,27 @@ class Main extends Component{
         this.testSubtitleThree = "Hello world";
 
         this.articleContent = props.articleContent;
-        this.articleId = props.React;
+        this.articleId = props.articleId;
     }
+
 
     render(props){
         return(
-            <div className="main-content">
-
-
 
                 <div className="title-story">
                     <img src="*" alt="{SSR-Necessary}"/>
-                    <h2 className="story-title">{this.testTitle}</h2>
+                    <h2 className="story-title">{ this.articleContent }</h2>
                     <div className="story-subtitle">
-                        <p>{this.testSubtitleOne}</p>
-                        <p>{this.testSubtitleOne}</p>
-                        <p>{this.testSubtitleOne}</p>
+                        <p>{ this.testSubtitleOne }</p>
+                        <p>{ this.testSubtitleOne }</p>
+                        <p>{ this.testSubtitleOne }</p>
                     </div>
                 </div>
-            </div>
-
-                
+           
         )
     }
 
 }
+
 
 export default Main;

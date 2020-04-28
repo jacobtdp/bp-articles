@@ -31,22 +31,35 @@ class App extends Component {
   }
 
   componentWillMount(){
+
+    // this.setState({
+    //   articles: 
+    // })
+
     const previousArticles = this.state.articles;
 
     this.database.on('child_added', snap => {
       previousArticles.push({
         id: snap.key,
-        articleContent: snap.val().articleContent
+        article: snap.val().article
       })
-    })
-
-    this.setState({
-      articles: previousArticles
+      this.setState({
+        articles: previousArticles
+      })
     })
   }
 
-  addArticle(articles){
-    this.database.push().set({ articleContent: articles })
+  // componentDidMount(){
+  //   debugger;
+  //   this.setState({
+  //     articles: [{id: '1', article: 'didmount test'}, {id: '2', article: 'didmount test two'}],
+  //   })
+  // }
+
+
+
+  addArticle(newArticle){
+    this.database.push().set({ article: newArticle })
   }
 
 
@@ -64,13 +77,14 @@ class App extends Component {
               <div><Links /></div>
 
               <div className="articles">
-              {
-                this.state.articles.map((article) => {
-                  return(
-                      <Main articleTitle={article.articleTitle} article={article} articleId={article.id} key={article.id} />
-                  )
-                })
-              }
+                {  console.log(this.state.articles) }
+                {
+                  this.state.articles.map((article) => {
+                    return(
+                        <Main articleContent={article.articleContent} articleId={article.id} key={article.id} />
+                    )
+                  })
+                }
               </div>
 
               <div><Ad /></div>
