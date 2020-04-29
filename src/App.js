@@ -77,11 +77,10 @@ class App extends Component {
               <div><Links /></div>
 
               <div className="articles">
-                {  console.log(this.state.articles) }
                 {
                   this.state.articles.map((article) => {
                     return(
-                        <Main articleContent={article.articleContent} articleId={article.id} key={article.id} />
+                        <Main article={article} articleId={article.id} key={article.id} />
                     )
                   })
                 }

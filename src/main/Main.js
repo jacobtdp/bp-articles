@@ -5,27 +5,23 @@ class Main extends Component{
 
     constructor(props){
         super(props);
-
-        this.testTitle = "Hello World";
-        this.testSubtitleOne = "Hello world";
-        this.testSubtitleTwo = "Hello world";
-        this.testSubtitleThree = "Hello world";
-
-        this.articleContent = props.articleContent;
-        this.articleId = props.articleId;
+        this.article = props.article.article;
     }
 
 
     render(props){
+
+        console.log(this.article);
+
         return(
 
                 <div className="title-story">
                     <img src="*" alt="{SSR-Necessary}"/>
-                    <h2 className="story-title">{ this.articleContent }</h2>
+                    <h2 className="story-title">{ this.article.newArticleTitle }</h2>
                     <div className="story-subtitle">
-                        <p>{ this.testSubtitleOne }</p>
-                        <p>{ this.testSubtitleOne }</p>
-                        <p>{ this.testSubtitleOne }</p>
+                        <p>{ this.article.newArticleSubtitleOne }</p>
+                        <p>{ this.article.newArticleSubtitleTwo }</p>
+                        <p>{ this.article.newArticleSubtitleThree }</p>
                     </div>
                 </div>
            
