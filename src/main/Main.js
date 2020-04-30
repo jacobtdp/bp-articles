@@ -11,8 +11,6 @@ class Main extends Component{
 
     render(props){
 
-        console.log(this.article);
-
         return(
 
                 <div className="title-story">

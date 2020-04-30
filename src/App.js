@@ -16,6 +16,8 @@ import Nav from './nav/Nav';
 import Ad from './ad/Ad';
 import Submit from './submit/Submit';
 
+import './main/Main.css';
+
 class App extends Component {
 
   constructor(props){
@@ -49,21 +51,13 @@ class App extends Component {
     })
   }
 
-  // componentDidMount(){
-  //   debugger;
-  //   this.setState({
-  //     articles: [{id: '1', article: 'didmount test'}, {id: '2', article: 'didmount test two'}],
-  //   })
-  // }
-
-
-
   addArticle(newArticle){
     this.database.push().set({ article: newArticle })
   }
 
 
   render(){
+
     return (
       <Router>
         <div className="App">
@@ -74,17 +68,30 @@ class App extends Component {
           </header>
 
             <div className="body-wrapper">
-              <div><Links /></div>
 
-              <div className="articles">
+              <div className="left-content">
+                <h2>More Articles</h2>
+                <div className="left-links">
+                  {
+                    this.state.articles.slice(7, 10).map((article) => {
+                      return(
+                        <Links article={article} articleId={article.id} key={article.id} />
+                      )
+                    })
+                  }
+                </div>
+              </div>
+
+              <div className="main-content">
                 {
-                  this.state.articles.map((article) => {
+                  this.state.articles.slice(0, 7).map((article) => {
                     return(
                         <Main article={article} articleId={article.id} key={article.id} />
                     )
                   })
                 }
               </div>
+
 
               <div><Ad /></div>
 

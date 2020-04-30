@@ -41,11 +41,13 @@ class Submit extends Component {
                 newArticleSubtitleTwo: '',
                 newArticleSubtitleThree: '',
                 newArticleContent: '',
-                newArticleImage: '',
+                newArticleImage: '*',
             })
         } else {
             console.log('ERR: Please fill out all forms');
         }   
+
+        submitAcceptable = true;
     }
 
     render(){
