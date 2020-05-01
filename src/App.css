@@ -7,7 +7,6 @@
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   height: 125vh;
-  padding-top: 68px;
 }
 
 .body-wrapper > div {

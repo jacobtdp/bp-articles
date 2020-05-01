@@ -10,11 +10,9 @@ import {
   Link
 } from 'react-router-dom';
 
-import Main from './main/Main';
-import Links from './links/Links';
 import Nav from './nav/Nav';
-import Ad from './ad/Ad';
 import Submit from './submit/Submit';
+import Homepage from './homepage/Homepage'
 
 import './main/Main.css';
 
@@ -33,10 +31,6 @@ class App extends Component {
   }
 
   componentWillMount(){
-
-    // this.setState({
-    //   articles: 
-    // })
 
     const previousArticles = this.state.articles;
 
@@ -61,48 +55,23 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <header className="App-header">
-            
-            <Nav />
 
-          </header>
+          <header className="App-header"></header>
 
-            <div className="body-wrapper">
-
-              <div className="left-content">
-                <h2>More Articles</h2>
-                <div className="left-links">
-                  {
-                    this.state.articles.slice(7, 10).map((article) => {
-                      return(
-                        <Links article={article} articleId={article.id} key={article.id} />
-                      )
-                    })
-                  }
-                </div>
-              </div>
-
-              <div className="main-content">
-                {
-                  this.state.articles.slice(0, 7).map((article) => {
-                    return(
-                        <Main article={article} articleId={article.id} key={article.id} />
-                    )
-                  })
-                }
-              </div>
+          <Nav />
 
 
-              <div><Ad /></div>
+          <Switch>
 
-              <Link to="/submit-article">(write)</Link>
-            </div>
+            {/* <Route path="/home">
+              <Homepage articles={this.articles}/>
+            </Route> */}
 
-            <Switch>
-              <Route path="/submit-article">
-                <Submit addArticle={this.addArticle} />
-              </Route>
-            </Switch>
+            <Route path="/submit-article">
+              <Submit addArticle={this.addArticle} />
+            </Route>
+
+          </Switch>
 
         </div>
       </Router>

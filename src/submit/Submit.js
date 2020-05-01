@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Submit.css';
 
 class Submit extends Component {
 
@@ -52,7 +53,7 @@ class Submit extends Component {
 
     render(){
         return(
-            <div>
+            <div className="submit-form">
 
                 <input type="text"
                 className="newArticleTitle"
